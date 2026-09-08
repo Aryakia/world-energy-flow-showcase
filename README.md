@@ -4,7 +4,7 @@
 
 **Repository type:** Public project showcase  
 **Project area:** Energy markets · systems thinking · research publishing  
-**Website:** https://worldenergyflow.com  
+**Website:** [https://worldenergyflow.com](https://www.worldenergyflow.com/?lang=en)  
 **Canonical source:** Private production repository
 
 ---
