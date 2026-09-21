@@ -2,6 +2,8 @@
 
 **A Systems View of Global Energy**
 
+[View the visual publication and evidence workflow](docs/VISUAL_CASE_STUDY.md) · [Public case-study page](index.html) · [Live platform](https://worldenergyflow.com)
+
 | | |
 |---|---|
 | **Project type** | Energy-market analysis · systems thinking · research publishing |
