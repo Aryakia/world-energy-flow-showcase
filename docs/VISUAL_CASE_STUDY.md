@@ -17,22 +17,30 @@ flowchart LR
   G --> H
 ```
 
-**Evidence separation:** A sourced observation is not a calculated metric, an analytical inference, or a conditional scenario. This diagram summarizes the published editorial/data architecture; it does not claim an independently audited production-data pipeline.
+**Evidence separation:** A sourced observation is not a calculated metric, an analytical inference, or a conditional scenario. This conceptual diagram summarizes the documented editorial/data architecture; it is not an independently audited production-data pipeline.
 
-## Show what visitors can inspect
+## Worked example: five different statements, not one price story
 
-- **Live platform:** [worldenergyflow.com](https://worldenergyflow.com) (public link supplied in the existing project README; live operation has not been retested in this PR).
-- **Public technology:** the [README](../README.md) documents the site architecture, bilingual support, archive, dashboard, export and editorial standards.
-- **Public case study:** [index.html](../index.html) describes the product without publishing the private source.
+The following values are **deliberately fictional teaching inputs**, not market observations, current prices, forecasts or quotations from a published World of Energy issue. They show how an actual issue *should be documented*, not how any real benchmark moved.
 
-## Screenshot release gate
+| Classification | Example of appropriate presentation | Required provenance |
+| --- | --- | --- |
+| Sourced observation | "An illustrative benchmark moves from 100 to 110 units between dates A and B." | Real use requires the actual benchmark, units, dates, retrieval time and public primary data URL. |
+| Calculated metric | "Simple return = (110 − 100) / 100 = 10%." | Define the formula, observation window, treatment of missing values and calculation source. |
+| Analytical inference | "A supply constraint is one *possible* explanation." | Cite the specific evidence for any claimed constraint and explain rival drivers; a return alone cannot establish causality. |
+| Conditional scenario | "If supply decreases while other drivers remain unchanged, upward pressure may occur." | State scenario assumptions; never display this as an observed market event or a quantitative forecast. |
+| Limitation | "This example contains no inventory, demand or event evidence." | Declare unavailable evidence and do not estimate missing history silently. |
 
-No screenshot of the live dashboard is included in this change. Before adding one, capture an actual public dashboard/article view, verify the publication date and numeric values against publicly released observations, and exclude unpublished editorial drafts, analytics and deployment bindings. Label a case-study page screenshot as a **case-study page**, not a screenshot of the private application.
+For real cases, point a visitor to the [public platform](https://worldenergyflow.com), the dated issue's source links and released CSV; reproduce the metric from those public observations before adding a screenshot or stronger numerical example. This review could not independently verify the live website's availability.
 
-## Suggested GitHub About fields (not automatically applied)
+## Bilingual and dashboard visual acceptance criteria
+
+Before an **actual** screen capture, check that the English and Farsi views present identical observation values and dates, that RTL labels and chart units remain legible, and that the dashboard time window matches the downloaded dataset. Label the capture with its publication date and public URL. A chart of scenario output must not be presented as market history. No genuine application screenshot is included here.
+
+## GitHub About fields — proposed, not applied
 
 - **Description:** `Bilingual energy-market research platform connecting price data, systems thinking and source-linked analysis.`
 - **Topics:** `energy-systems`, `energy-markets`, `systems-thinking`, `data-visualization`, `research-publishing`
-- **Homepage:** `https://worldenergyflow.com` (verify public accessibility before applying).
+- **Homepage:** `https://worldenergyflow.com` — apply only after independently confirming the intended publicly accessible domain.
 
 No source code, credentials, unpublished analysis or private data are copied into this repository.
