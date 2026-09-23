@@ -142,4 +142,3 @@ This showcase does **not** expose the canonical source repository, credentials, 
 ## Author
 
 **Arya Kia**  
-Energy systems · policy · market analysis · systems thinking
